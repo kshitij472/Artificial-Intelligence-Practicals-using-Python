@@ -1,6 +1,8 @@
-p = input("p(True/False):").strip().lower() == "true"
-q = input("q(True/False):").strip().lower() == "true"
-op = input("op(AND/OR/NOT):").strip().lower()
+#represent and evaluate prepositional logic expressions
+
+p = input("p (True/false):").strip().lower() == "True"
+q = input("q (True/False):").strip().lower() == "True"
+op = input("Operations(AND/OR/NOT):").strip().lower()
 
 if op == "and":
     print(p and q)
@@ -9,4 +11,4 @@ elif op == "or":
 elif op == "not":
     print(not p)
 else:
-    print("invalid")
+    print("Invalid choice")
